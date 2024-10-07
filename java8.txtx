@@ -1,0 +1,194 @@
+What are the reasons for java launching the 8 fetures ?
+
+what were the intensions what what was wrong with java 7 
+
+ans ) the ans is that they have 3 main intentions of realising java 8 
+
+those are 
+1. concise and minimal code 
+2. functional programming benifits .
+3. to enable parallel programming 
+
+we have octa core processeors so that we can utilize the resources more and more 
+
+the features in java 8 are :
+
+1) lamda expression -> anonymus function (x,y) -> x+y;
+
+2) stream api -> used to perform operations on collections.
+
+3) date and time api :
+
+4) base64 inbulit pacakage for encode and decode 
+
+5) method refererce and construtoer refererce (::) operator
+
+
+default methods and static methods 
+
+functional interface -> SAM single abstract method 
+@FunctionalInterface
+
+
+Lamda Expression 
+
+function which has no name , modifire and return type 
+
+Class main{
+    void printhello()
+{
+    sop("hello");
+}
+
+}
+
+remove modifier , type , return type 
+
+so the above function is 
+
+() -> {sop("hello");}
+
+
+(int a , int b) -> {sop(a+b)}
+
+(String s ) -> {return str.length()}
+
+
+if body has single statement we can remove the { }
+
+so 
+() -> sop("hello");
+
+type inference  = compiles gets the type
+
+(a,b) -> sop(a+b)
+
+s -> str.length();
+
+benifits of lambda:
+
+parallel prossing
+
+jar file reduction
+
+more readable 
+
+
+FunctionalInterface :
+
+interface having only single abstract method but can have any number
+of default and static methods .
+
+we can use lambda by usin FunctionalInterface 
+
+@FunctionalInterface -> annotation
+says compiler this is FunctionalInterface
+
+public interface myinterface{
+
+    public void sayhello();
+
+    default void ayhi(){
+
+    }
+    static void f3(){
+
+   }
+
+}
+
+child is also FunctionalInterface
+
+if implements 
+if child adds abs method then its not FunctionalInterface.
+
+
+Default methods in interface:
+
+
+until 7 we couild only use abstract methods in interface
+
+similarly public static final abstract methods
+
+from 8 we can have implementation methods
+
+interface parent{
+    default void f1(){
+        sop(hi);
+    }
+}
+class child implements parent{
+    @override
+    public void f1()
+  {  
+        sop(hello);
+  } 
+}
+
+class main{
+
+    pvsm(){
+        parent p = new child();
+        p.f1();//hello
+    }
+}
+
+interface A{
+    default f1(){
+        sop(hi c);
+    }
+}
+
+interface B{
+
+    default f1(){
+        sop(hi b)
+    }
+}
+
+class c implements a,b {
+
+    pvsm(){
+
+
+            c c = new c();
+            c.f1(); // confused 
+
+            so
+            public void f1(){
+                // A.super.f1()
+                // b.super.f1()
+                or sop(hi c);
+            }
+    }
+}
+
+Ambiguty is lost;
+
+
+Static method in interface :
+
+same as default we can write the body for method 
+but cannot be overriden ;
+
+interface A{
+    static f1(){
+        sop(hi c);
+    }
+}
+
+class main implements A{
+    pvsm(){
+        main m = new main();
+        m.f1() // x
+
+        main.f1() // x
+
+        A.f1(); <--
+    }
+}
+
+
+we can also use main in interface from 1.8.
+
+
