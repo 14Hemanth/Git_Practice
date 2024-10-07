@@ -74,8 +74,13 @@ Branch
 the most important features of git 
 n Git, branches are a part of your everyday development process.
 
+parallel development , collaborations , each person can create a branch work on the task 
+and then merge them.
+
 Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new 
 feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes.
 
 to create a new branch we need use the command git checkout  -b branch_name  
 or git switch branch_name
+
+to delete a branch we ned to use git branch -d branch_name
