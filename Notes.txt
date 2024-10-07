@@ -82,3 +82,13 @@ feature or fix a bug—no matter how big or how small—you spawn a new branch t
 
 to create a new branch we need use the command git checkout  -b branch_name  
 or git switch branch_name
+
+
+Git merge branch_name
+
+make sure in the main branch
+
+
+git pull origin branch1 
+
+b4 mearging to get all the code from the remote repository.
