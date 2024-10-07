@@ -1,1 +1,68 @@
-Hi
+Version control system
+
+1. Local Version control
+    The local version maintaining the  project in your local machine 
+    like - project , project updated , project final ,..etc.
+    
+    Cons : But the project or the codes werent availble to the other people. 
+
+2. Centralized version control 
+    The centralized version is the just updated version wher
+    e the project files are kept Accessible to multiple persons.
+
+    Cons : But if the centralized server goes down all the code get lost.
+
+
+3. Distributed version control
+     So git is a Distributed version control system where the project files are stored in the local and also in the server 
+     with lots of extra features where multiple boides can use it at a time.
+
+     The basic location server could be github , bitbucket...etc
+
+History of git 
+
+git is an open source from 2005 
+
+in 2004 linux was in bitkeeper which was free and after that was made paid then plp built git from the inspiration from bitkeeper 
+
+Git Init 
+
+    The git init generally says to initilaize the current  directory as a working directory so that the git can take care of this 
+    directory while the time of working 
+
+    We have a staging are (.git) so it is where git works 
+    staging area and commit history 
+    every commit is a new version 
+
+    So if we use git init the git will make the local repository which is master repository 
+
+    we can use git init -b main
+
+    it creates a new branch with the name main and initilaize the repository there.
+
+
+Git commit 
+
+ working directory is the place we edit our files and there is a staging area 
+ if we need the git to handle the files we need to add it to the staging area 
+ the adding of the files to the staging area is done by using git commit 
+ but it will not add to the staging are if we need to add it we have to use the git add <filename.ext> or (.) to add all the files
+ staging area.
+
+ working ---> staging (git add ) ---> commits (git commit -m "")
+
+a49d93c this is called a checksum which helps the git to track the files \
+every commit git adds this checksum to it to track .
+
+working ---> commits (git commit -a -m "")
+If we want to commit the updated ones directly we could use Skip stage
+by git commit -a -m ""
+
+
+If we want to know what is the excact changes that are added to the file we can use the git command
+called "git diff"
+
+if the file is in staging area we have to use git diff --staged
+
+
+Remove a file 
