@@ -65,4 +65,16 @@ called "git diff"
 if the file is in staging area we have to use git diff --staged
 
 
-Remove a file 
+Remove a file rm file name ,  (--cached (if in sataged area))
+
+
+
+Branch 
+
+the most important features of git 
+n Git, branches are a part of your everyday development process.
+
+Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new 
+feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes.
+
+to create a new branch we need use the command git checkout  -b branch_name
