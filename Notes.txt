@@ -84,3 +84,11 @@ to create a new branch we need use the command git checkout  -b branch_name
 or git switch branch_name
 
 to delete a branch we ned to use git branch -d branch_name
+
+
+
+git merge branch name to merge the data
+
+
+
+git pull origin branch1
